@@ -1,0 +1,4 @@
+include ':escposprinters'
+include ':app'
+project(':escposprinters').projectDir = new File(rootDir, 'escposprinter/')
+rootProject.name = "SysFactuRest"
