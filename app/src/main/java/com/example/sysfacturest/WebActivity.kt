@@ -43,7 +43,7 @@ class WebActivity : AppCompatActivity() {
         //ORIENTACION HORIZONTAL
         //setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         //ORIENTACION VERTICAL
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_FULL_SENSOR);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_web)
 
@@ -56,9 +56,7 @@ class WebActivity : AppCompatActivity() {
             //Inflate the dialog with custom view
             val mDialogView = LayoutInflater.from(this).inflate(R.layout.cambioip, null)
             mDialogView.txt_ip.setText(ipUrl.toString());
-
             mDialogView.txt_site.setText(siteName.toString());
-
             //AlertDialogBuilder
             val mBuilder = AlertDialog.Builder(this)
                 .setView(mDialogView)
