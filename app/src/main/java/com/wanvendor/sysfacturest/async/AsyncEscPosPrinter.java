@@ -1,4 +1,4 @@
-package com.example.sysfacturest.async;
+package com.wanvendor.sysfacturest.async;
 import com.dantsu.escposprinter.EscPosPrinterSize;
 import com.dantsu.escposprinter.connection.DeviceConnection;
 

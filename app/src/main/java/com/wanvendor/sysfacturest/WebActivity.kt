@@ -1,6 +1,5 @@
-package com.example.sysfacturest
+package com.wanvendor.sysfacturest
 import android.app.AlertDialog
-import android.app.ProgressDialog
 import android.content.Context
 import android.content.Intent
 import android.content.pm.ActivityInfo
@@ -43,7 +42,7 @@ class WebActivity : AppCompatActivity() {
         //ORIENTACION HORIZONTAL
         //setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         //ORIENTACION VERTICAL
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        //setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_web)
 
@@ -159,7 +158,7 @@ class WebActivity : AppCompatActivity() {
         webSettings.setSupportZoom(false);
         //improve webView performance
         mwebView!!.getSettings().setRenderPriority(WebSettings.RenderPriority.HIGH)
-        //mwebView!!.getSettings().setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK)
+        mwebView!!.getSettings().setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK)
         mwebView!!.getSettings().setCacheMode(WebSettings.LOAD_NO_CACHE)
         mwebView!!.getSettings().setAppCacheEnabled(true)
         //mwebView!!.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY)

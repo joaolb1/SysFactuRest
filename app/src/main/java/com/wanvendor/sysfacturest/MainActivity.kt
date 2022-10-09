@@ -1,9 +1,6 @@
-package com.example.sysfacturest
+package com.wanvendor.sysfacturest
 
 import android.os.Bundle
-import android.view.Menu
-import android.view.MenuItem
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 
@@ -32,7 +29,7 @@ class MainActivity : AppCompatActivity() {
                 startActivity(intent)
             }
         }else{
-            //example : https://192.168.1.100:8081/sitio
+            //wanvendor : https://192.168.1.100:8081/sitio
             var pageUrl = "https://" + ipUrl + ":8081/"+ siteName
             if(ipUrl == "" || ipUrl == null){
                 pageUrl ="Https://192.168.1.100:8081/SysMozo/";

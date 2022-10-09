@@ -1,4 +1,4 @@
-package com.example.sysfacturest
+package com.wanvendor.sysfacturest
 
 import org.junit.Test
 
